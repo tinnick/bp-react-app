@@ -4,6 +4,9 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const path = require("path");
 
 module.exports = {
+	devServer: {
+		port: "8000"
+	},
 	devtool: process.env.NODE_ENV === "production"
 		? false
 		: "source-map",
