@@ -59,6 +59,7 @@ module.exports = {
 		}),
 		new HtmlWebpackPlugin({
 			filename: "index.html",
+			template: "./src/index.html",
 			// scriptLoading: "defer",
 			// favicon: path.resolve(__dirname, "/favicon.ico"),
 			showErrors: process.env.NODE_ENV !== "production",
